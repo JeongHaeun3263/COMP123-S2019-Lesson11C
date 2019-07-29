@@ -8,6 +8,7 @@ namespace COMP123_S2019_Lesson11C
 {
     public static class Program
     {
+        public static Student student; // { get; set; } < don't need anymore
         public static StartForm startForm;
         public static MainForm mainForm;
         public static AboutForm aboutForm;
@@ -24,6 +25,7 @@ namespace COMP123_S2019_Lesson11C
             startForm = new StartForm();
             mainForm = new MainForm();
             aboutForm = new AboutForm();
+            student = new Student();
 
             Application.Run(startForm); // startForm 부터 시작하기 위함
         }
